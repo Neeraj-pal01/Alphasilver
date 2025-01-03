@@ -7,7 +7,11 @@ export default function Header() {
   return (
     <>
       <Navbar />
+<<<<<<< HEAD
       <ul className=' lg:flex hidden justify-around items-center bg-[#49a6a2] py-[0.5px] text-white font-Poppins font-normal text-lg border-b-2'>
+=======
+      <ul className=' lg:flex hidden justify-around items-center bg-[#49a6a2] py-1 text-white font-Poppins font-normal text-lg border-b-2'>
+>>>>>>> 3d38f9bb495b9e69eca35182f50ab4ec68352d58
  
         <li className='pe-24 py-2 border-r-2 border-white'><Link>
         <span>

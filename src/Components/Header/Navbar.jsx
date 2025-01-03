@@ -1,14 +1,24 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3d38f9bb495b9e69eca35182f50ab4ec68352d58
 // import searchIcon from '../assests/Icons/search.png'
 
 export default function Navbar() {
   return (
     <>
+<<<<<<< HEAD
       <div className='p-3 flex justify-between w-full items-center'>
         <div className='flex items-center lg:w-auto w-1/2 justify-between'>
           <div className='lg:hidden inline'>
+=======
+      <div className='p-3 flex justify-between  items-center'>
+
+        <div className='flex items-center '>
+          <div className='lg:hidden inline'>{/* menuIcon*/}
+>>>>>>> 3d38f9bb495b9e69eca35182f50ab4ec68352d58
           <svg className="inline h-6 w-7  text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>

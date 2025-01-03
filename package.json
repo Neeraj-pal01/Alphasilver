@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "react": "^18.3.1",
+<<<<<<< HEAD
     "react-dom": "^18.3.1",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1"
+=======
+    "react-dom": "^18.3.1"
+>>>>>>> 3d38f9bb495b9e69eca35182f50ab4ec68352d58
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
