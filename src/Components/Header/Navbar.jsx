@@ -13,7 +13,7 @@ export default function Navbar() {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
           </div>
-          <img className='max-w-32' src="../assests/LogoImg/Logo.png" alt="" />
+          <img className='max-w-32 hover:scale-105' src="../assests/LogoImg/Logo.png" alt="" />
           <input className='lg:inline hidden ml-5 font-medium font-Poppins rounded-xl pl-4 py-2 border border-gray-300 pe-96' placeholder='Search for the products' type="text" />
           <span className='absolute lg:inline hidden top-6 left-1/3 pl-36'>{/* searchIcon*/}
             <svg className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">

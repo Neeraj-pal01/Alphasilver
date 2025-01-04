@@ -69,13 +69,13 @@ export default function Footer() {
               </Link>
             </div>
             <div className='flex gap-5 pt-5'>
-              <Link><img className='max-w-32' src="../assests/downloadImg/playStore.png" /></Link>
-              <Link><img className='max-w-32' src="../assests/downloadImg/appStore.png" /></Link>
+              <Link><img className='max-w-32 hover:scale-110' src="../assests/downloadImg/playStore.png" /></Link>
+              <Link><img className='max-w-32 hover:scale-110' src="../assests/downloadImg/appStore.png" /></Link>
             </div>
           </div>
         </div>
 
-        <div className='flex items-center justify-evenly flex-wrap border-b border-gray-400'>
+        <div className='flex items-center justify-evenly flex-wrap py-2'>
           <p className='text-center py-3'>Copyright © 2025, All Rights Reserved Alpha Platinum Private Limited</p>
           <div className='md:flex hidden gap-x-8 list-none '>
             <Link to={"/"}><li>Home</li></Link>
