@@ -157,7 +157,7 @@ export default function Home() {
 
   return (
     <>
-      <div className='flex relative overflow-hidden '>
+      <div className='flex relative overflow-hidden  '>
         <div className="">
           <img className='' src={bannerImg[index]} alt="" />
         </div>
@@ -200,7 +200,7 @@ export default function Home() {
       <section>
         {/* new Products section */}
 
-        <div className='pl-12 bg-white pt-12 pb-5 shadow border-b border-gray-300  '>
+        <div className='pl-12 bg-white pt-12 pb-5 shadow border-b border-gray-300 text-nowrap'>
           <h2 className=' font-Poppins font-medium text-4xl '>New Products</h2>
           <div className='flex justify-between mb-6 border-b border-gray-300'>
 
@@ -216,7 +216,7 @@ export default function Home() {
               <div className='flex justify-center items-center'>
                 <div className=' text-center border border-gray-300 rounded-md '>
                   <div className='flex justify-center items-center h-64'>
-                    <span className='text-xs self-start  bg-[#14949d] mr-1 m-1 p-1 rounded-r-md text-white'>{j.discount}</span>
+                    <span className= 'text-xs self-start  bg-[#14949d] p-1 rounded-r-md text-white relative left-0 z-10 top-0'>{j.discount}</span>
                     <Link to={j.link1}>
                       <img className='max-w-48 ' src={j.img} alt="" />
                     </Link>
@@ -242,14 +242,14 @@ export default function Home() {
           </Slider>
         </div>
         {/* 2nd row */}
-        <div className=' flex py-8 pl-8 border-b border-gray-300 mb-12 shadow-md'>
+        <div className=' flex py-8 pl-8 border-b border-gray-300 mb-12 shadow-md flex-wrap text-nowrap'>
           {productImg1.map((j) => (
             <div className='flex justify-center items-center' >
-              <div className=' text-center border-[0.5px] border-gray-300 rounded-md pt-8 '>
-                <div className='flex justify-center items-center h-60'>
-                  <span className='text-xs self-start  bg-[#14949d]  p-1 rounded-r-md text-white text-nowrap'>{j.discount}</span>
+              <div className=' text-center border-[0.5px] border-gray-300 rounded-md '>
+                <div className='flex justify-center items-center h-64'>
+                  <span className='text-xs self-start  bg-[#14949d] p-1 rounded-r-md text-white relative left-0 z-10 top-0'>{j.discount}</span>
                   <Link to={j.link1}>
-                    <img className='object-containe h-full w-full' src={j.img} alt="" />
+                    <img className='object-contain max-w-48' src={j.img} alt="" />
                   </Link>
                   <span className='self-start ml-2 m-1 p-1'>
                     <svg className="h-6 w-6 text-gray-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -290,9 +290,9 @@ export default function Home() {
       </section>
       <section>
         {/* Our speciality */}
-        <div className='h-32 bg-[#49a6a2]'>
-          <div className='flex justify-around items-center h-full'>
-            <div className='flex items-center space-x-8 text-white '>
+        <div className=' p-10 bg-[#49a6a2]'>
+          <div className='flex justify-evenly items-center h-full flex-wrap'>
+            <div className='flex items-center space-x-8 p-4 text-white '>
               <div>
                 <svg className="h-12 w-12 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />  <line x1="3" y1="9" x2="7" y2="9" /></svg>
 
@@ -304,7 +304,7 @@ export default function Home() {
             </div>
             <div className='flex items-center space-x-8 text-white '>
               <div>
-              <svg class="h-12 w-12 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="1 4 1 10 7 10" />  <polyline points="23 20 23 14 17 14" />  <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" /></svg>
+                <svg class="h-12 w-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <polyline points="1 4 1 10 7 10" />  <polyline points="23 20 23 14 17 14" />  <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" /></svg>
 
               </div>
               <div className=' font-medium text-center'>
@@ -314,7 +314,7 @@ export default function Home() {
             </div>
             <div className='flex items-center space-x-8  text-white '>
               <div>
-              <svg class="h-12 w-12 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                <svg class="h-12 w-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
               </div>
               <div className=' font-medium text-center'>
                 <h4 className='text-xl'>24/7 Support</h4>
@@ -323,15 +323,12 @@ export default function Home() {
             </div>
             <div className='flex  items-center space-x-8 text-white '>
               <div>
-              <svg class="h-12 w-12 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-</svg>
-
-
+                <svg class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
               </div>
               <div className=' font-semibold text-center'>
                 <h4 className='text-xl'>Seller Login</h4>
-                
               </div>
             </div>
           </div>
