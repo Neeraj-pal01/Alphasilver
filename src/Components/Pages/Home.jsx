@@ -34,6 +34,8 @@ export default function Home() {
 
   return (
     <>
+
+      {/* Banner Section */}
       <div className='flex relative overflow-hidden  '>
         <div className="">
           <img className='' src={bannerImg[index]} alt="" />
@@ -60,7 +62,7 @@ export default function Home() {
         <div className='text-black w-full m-auto py-5'>
           <Slider {...settings}>
             {categoryImg.map((i) => (
-              <div className=' text-center '>
+              <div className=' '>
                 <div className='flex justify-center items-center'>
                   <Link to={i.link}>
                     <img className='rounded-full object-cover border-2 border-blue-500' src={i.img} alt="" />
@@ -153,8 +155,10 @@ export default function Home() {
           </div>
         </div>
       </section >
+
+
+     {/* download section */}
       <section>
-        {/* download section */}
         <div className='mb-8 h-52 w-3/4 mx-auto border-[0.5px] border-gray-200 rounded-lg text-black shadow-xl hover:shadow-2xl'>
           <div className='flex justify-center items-center h-full'>
             <div className='text-white'><img src="https://alphasilver.productsalphawizz.com/uploads/booking.png" alt="" /></div>
@@ -166,13 +170,14 @@ export default function Home() {
         </div>
       </section>
       <section>
+
+
         {/* Our speciality */}
         <div className=' p-10 bg-[#49a6a2]'>
           <div className='flex justify-evenly items-center h-full flex-wrap'>
             <div className='flex items-center space-x-8 p-4 text-white '>
               <div>
                 <svg className="h-12 w-12 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />  <line x1="3" y1="9" x2="7" y2="9" /></svg>
-
               </div>
               <div className=' font-medium text-center'>
                 <h4 className='text-xl'>Fast Shipping</h4>

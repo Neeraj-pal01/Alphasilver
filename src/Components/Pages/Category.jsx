@@ -1,6 +1,5 @@
 import React from 'react'
 import { categoryImg} from '../DataPass/Data'
-
 import { Link } from 'react-router-dom'
 
 

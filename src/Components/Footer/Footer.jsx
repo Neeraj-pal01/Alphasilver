@@ -17,10 +17,10 @@ export default function Footer() {
               <span className='w-16 pt-3 block border-b-2 border-[#14949d] '></span>
             </div>
             <ul className='grid grid-cols-2 items-center  gap-y-2 gap-x-20'>
-              <Link to="/home">
+              <Link to="/">
                 <li>Home</li>
               </Link>
-              <Link to="/category">
+              <Link to="/categories">
                 <li>Category</li>
               </Link>
               <Link to="/products">

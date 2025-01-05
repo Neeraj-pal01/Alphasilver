@@ -1,7 +1,11 @@
 import React from 'react'
+import ProductsNav from './ProductsNav'
+ProductsNav
 
 export default function Clothing() {
   return (
-    <div>Clothing</div>
+    <div>
+      <ProductsNav name='CLOTHING'></ProductsNav>
+      Clothing</div>
   )
 }
