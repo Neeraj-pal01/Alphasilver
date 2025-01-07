@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Home.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom'
+import { CategoryContext } from '../Products/CategoryProvider';
+
 
 import {bannerImg, categoryImg, productImg, productImg1, settings, settings1  } from '../DataPass/Data'
 
@@ -13,6 +15,8 @@ import {bannerImg, categoryImg, productImg, productImg1, settings, settings1  } 
 
 
 export default function Home() {
+    const { categoryState, setCategoryState } = useContext(CategoryContext);
+    
 
   const [index, setIndex] = React.useState(0)
   const Previous = () => {
@@ -61,11 +65,11 @@ export default function Home() {
 
         <div className='text-black w-full m-auto py-5'>
           <Slider {...settings}>
-            {categoryImg.map((i) => (
+            {categoryImg.map((i,index) => (
               <div className=' '>
                 <div className='flex justify-center items-center'>
                   <Link to={i.link}>
-                    <img className='rounded-full object-cover border-2 border-blue-500' src={i.img} alt="" />
+                    <img onClick={() => setCategoryState([i.name,index])} className='rounded-full object-cover border-2 border-blue-500' src={i.img} alt="" />
                   </Link>
                 </div>
                 <div className='flex justify-center text-lg'>
@@ -79,7 +83,7 @@ export default function Home() {
       <section>
         {/* new Products section */}
 
-        <div className='pl-12 bg-white pt-12 pb-5 shadow border-b border-gray-300 text-nowrap'>
+        <div className='lg:pl-12 bg-white pt-12 pb-5 shadow border-b border-gray-300 text-nowrap'>
           <h2 className=' font-Poppins font-medium text-4xl '>New Products</h2>
           <div className='flex justify-between mb-6 border-b border-gray-300'>
 
@@ -121,14 +125,14 @@ export default function Home() {
           </Slider>
         </div>
         {/* 2nd row */}
-        <div className=' flex py-8 pl-8 border-b border-gray-300 mb-12 shadow-md flex-wrap text-nowrap'>
+        <div className=' flex justify-center py-8 border-b border-gray-300 mb-12 shadow-md flex-wrap lg:flex-nowrap text-nowrap'>
           {productImg1.map((j) => (
             <div className='flex justify-center items-center' >
-              <div className=' text-center border-[0.5px] border-gray-300 rounded-md '>
+              <div className=' text-center lg:border-[0.5px] border-gray-300 rounded-md '>
                 <div className='flex justify-center items-center h-64'>
                   <span className='text-xs self-start  bg-[#14949d] p-1 rounded-r-md text-white relative left-0 z-10 top-0'>{j.discount}</span>
                   <Link to={j.link1}>
-                    <img className='object-contain max-w-48' src={j.img} alt="" />
+                    <img className='object-contain max-w-44' src={j.img} alt={j.name} />
                   </Link>
                   <span className='self-start ml-2 m-1 p-1'>
                     <svg className="h-6 w-6 text-gray-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -148,11 +152,13 @@ export default function Home() {
               </div>
             </div>
           ))}
-          <div className='flex-col justify-center items-center text-nowrap m-14' >
-            <p className='text-2xl font-medium'> Offer</p>
+
+          <div className='p-5' >
+            <p className='text-xl font-medium'> Offer</p>
             <p className=' text-gray-600'>Special offer</p>
             <p className='text-[#14949d] font-medium p-1'>View More</p>
           </div>
+
         </div>
       </section >
 
@@ -174,8 +180,8 @@ export default function Home() {
 
         {/* Our speciality */}
         <div className=' p-10 bg-[#49a6a2]'>
-          <div className='flex justify-evenly items-center h-full flex-wrap'>
-            <div className='flex items-center space-x-8 p-4 text-white '>
+          <div className='flex justify-evenly items-center gap-10 h-full flex-wrap'>
+            <div className='flex items-center  space-x-8  lg:p-4 text-white '>
               <div>
                 <svg className="h-12 w-12 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />  <line x1="3" y1="9" x2="7" y2="9" /></svg>
               </div>

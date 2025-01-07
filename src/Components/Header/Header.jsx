@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar'
+import { CategoryContext } from '../Products/CategoryProvider'
+import { categoryImg } from '../DataPass/Data'
+
+
 
 export default function Header() {
+  const {categoryState, setCategoryState} = useContext(CategoryContext);
   return (
     <>
       <Navbar />
@@ -16,13 +21,10 @@ export default function Header() {
             </svg>
           </span>
           See All</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/clothing'}>Clothing</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/electronics'}>Electronics</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/home-kitchen'}>Home & Kitchen</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/beauty-personal-care'}>Beauty & Personal Care</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/toys-games'}>Toys & Games</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/grocery-gourmet-food'}>Grocery & Gourmet Food</Link></li>
-        <li className='hover:underline hover:scale-105'><Link to={'products/category/books'}> Books</Link></li>
+        {categoryImg.slice(0,7).map((i,index)=>(
+        <li onClick={()=>setCategoryState([i.name,index])} className='hover:underline hover:scale-105'><Link to={i.link}>{i.name}</Link></li>
+        ))}
+        
       </ul>
     </>
   )

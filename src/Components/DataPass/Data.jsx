@@ -1,3 +1,6 @@
+
+
+
 export const bannerImg = ["../assests/bannerImg/banner1.png", "../assests/bannerImg/banner2.png", "../assests/bannerImg/banner3.png"]
 
 export const categoryImg = [
@@ -9,10 +12,10 @@ export const categoryImg = [
   { img: "../assests/categoryImg/category6.png", name: "Grocery & Gourmet Food", link: '/products/category/grocery-gourmet-food' },
   { img: "../assests/categoryImg/category7.png", name: "Books", link: '/products/category/books' },
   { img: "../assests/categoryImg/category8.png", name: "Fitness", link: '/products/category/fitness' },
-  { img: "../assests/categoryImg/category9.png", name: "Health & Personal Care", link: '/products/category/health-personal-care' },
-  { img: "../assests/categoryImg/category10.png", name: " Women Jewellery", link: '/products/category/women-jewellery' },
+  { img: "../assests/categoryImg/category9.png", name: "Health & Personal Care", link: 'products/category/health-personal-care' },
+  { img: "../assests/categoryImg/category10.png", name: "Stationery", link: '/products/category/stationery' },
   { img: "../assests/categoryImg/category11.png", name: "Mobiles", link: '/products/category/mobiles' },
-  { img: "../assests/categoryImg/category12.png", name: "Stationery", link: '/products/category/stationery' }
+  { img: "../assests/categoryImg/category12.png", name: "Women Jewellery", link: '/products/category/women-jewellery' }
 ]
 
 export const productImg = [
@@ -35,6 +38,70 @@ export const productImg1 = [
   { discount: '2% OFF', img: "../assests/cloth/yashikaSaree.png", name: "Yashika Saree", price: '₹312.90', link1: "/products/details/yashika-saree" }
 
 ]
+export const categoryVariety = [
+  [
+    { name: "Men's Fashion", link: "/products/category/mens-fashion", img: '../../assests/cloth/mensFashion.png' },
+    { name: "Saree", link: "/products/category/saree", img: '../../assests/cloth/saree.png' },
+    { name: "Kids Wear", link: "/products/category/kids-wear", img: '../../assests/cloth/kidsWear.png' },
+  ],
+  [
+    { name: "Computer & Accessories", link: "/products/category/mens-fashion", img: '../../assests/electronics/computersAccessories.png' },
+    { name: "Tv & Video", link: "/products/category/mens-fashion", img: '../../assests/electronics/tvVideo.png' },
+  ],
+  [
+    { name: "Bedding", link: "/products/category/home-kitchen", img: '../../assests/homeKitchen/bedding.png' }
+  ],
+  [
+    { name: "Hair Care", link: "/products/category/hair-care", img: '../../assests/beautyPersonalCare/hairCare.png' },
+    { name: "Skin Care", link: "/products/category/skin-care", img: '../../assests/beautyPersonalCare/skinCare.png' }
+  ],
+  [
+    { name: "Action Figures", link: "/products/category/action-figures", img: '../../assests/toysGames/actionFigures.png' },
+    { name: "Dolls & Accessories", link: "/products/category/dolls-accessories", img: '../../assests/toysGames/dollsAccessories.png' }
+  ],
+  [
+    { name: "Grocery", link: "/products/category/grocery-gourmet-food", img: '../../assests/grocery/grocery.png' },
+    { name: "Gourmet Food", link: "/products/category/grocery-gourmet-food", img: '../../assests/grocery/gourmetFood.png' }
+  ],
+  [
+    { name: "Books", link: "/products/category/fiction", img: '../../assests/books/fiction.png' }
+  ],
+  [
+    {
+      name: "Cardio Trining Equipment", link: "/products/category/cardio-training-equipment", img: '../../assests/fitness/cardioTrainingEquipment.png'
+    },
+  ],
+  [
+    {
+      name: "Medical Supplies & Equipment", link: "/products/category/medical-supplies-equipment", img: '../../assests/healthCare/medicalSuppliesEquipment.png'
+    },
+  ],
+  [
+    {
+      name: "Writing Instruments", link: "/products/category/writing-instrument", img: '../../assests/stationery/writingInstruments.png'
+    },
+  ],
+  [
+    {
+      name: "Oppo", link: "/products/category/oppo", img: '../../assests/mobiles/oppo.png'
+    },
+    {
+      name: "RealMe", link: "/products/category/realme", img: '../../assests/mobiles/realme.png'
+    },
+    {
+      name: "iPhone", link: "/products/category/iphone", img: '../../assests/mobiles/iphone.png'
+    }
+  ],
+  [
+    {name: "Ring", link: "/products/category/ring", img: '../../assests/womenJwelleries/ring.png'},
+    {name: "Neckless", link: "/products/category/neckless", img: '../../assests/womenJwelleries/neckless.png'},
+    {name: "Ear Rings", link: "/products/category/ear-ring", img: '../../assests/womenJwelleries/earRing.png'},
+  ]
+]
+
+
+
+
 export var settings = {
   dots: true,
   infinite: true,
