@@ -1,11 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-export default function ProductsNav({ name }) {
-
-    return (
-        <>
-            
-        </>
-    )
+export default function ProductsNav() {
+  return (
+    <div>ProductsNav</div>
+  )
 }

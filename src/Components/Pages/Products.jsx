@@ -4,8 +4,7 @@ import React from 'react'
 export default function Products() {
   return (
     <div>
-        
-        Products
+        <h1>Products</h1>
     </div>
   )
 }

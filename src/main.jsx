@@ -8,10 +8,9 @@ import Category from './Components/Pages/Category.jsx';
 import Home from './Components/Pages/Home.jsx';
 import Login from './Components/Pages/Login.jsx';
 import Products from './Components/Pages/Products.jsx';
-import Details from './Components/Products/details.jsx';
+import Details from './Components/Products/Details.jsx';
 import DynamicCategory from './Components/Products/DynamicCategory.jsx';
 import { CategoryProvider } from './Components/Products/CategoryProvider';
- // Import the provider
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +20,7 @@ const Router = createBrowserRouter(
       <Route path="Login" element={<Login />} />
       <Route path="categories" element={<Category />} />
       <Route path="products" element={<Products />} />
-      <Route path="products/details" element={<Details />} />
+      <Route path="products/details/:type" element={<Details />} />
       <Route path="products/category/:type" element={<DynamicCategory />} />
     </Route>
   )
