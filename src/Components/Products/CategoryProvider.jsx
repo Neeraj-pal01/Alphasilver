@@ -18,7 +18,7 @@ export const CategoryProvider = ({ children }) => {
     startTransition(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get("http://localhost:5000/api/data");
+          const response = await axios.get("https://alphasilver-1.onrender.com/api/data");
           console.log("response.data.categories", response.data.categories);
           setCategory(response.data.categories);
         } catch (error) {
