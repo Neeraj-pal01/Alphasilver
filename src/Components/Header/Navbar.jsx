@@ -5,7 +5,6 @@ export default function Navbar({ categories }) {
   const [search, setSearch] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  // Extract all products from the categories tree
   const extractProducts = (categories) => {
     const products = [];
     categories.forEach((category) => {
@@ -23,15 +22,12 @@ export default function Navbar({ categories }) {
     return products;
   };
 
-  // Extract all products once from the categories
   const allProducts = extractProducts(categories);
 
-  // Handle search input
   const searchHandler = (event) => {
     const value = event.target.value.toLowerCase();
     setSearch(value);
 
-    // Filter products based on the search term
     if (value === "") {
       setFilteredProducts([]);
     } else {

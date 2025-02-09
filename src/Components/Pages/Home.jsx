@@ -93,7 +93,7 @@ export default function Home() {
 
           <Slider {...settings1}>
             {category[4]?.products?.map((j) => (
-              <div key={j.name} className='flex justify-center items-center'>
+              <div key={j.name} className='flex justify-center items-center group'>
                 <div className=' text-center border border-gray-300 rounded-md '>
                   <div className='flex justify-center items-center h-64'>
                     <span className='text-xs self-start  bg-[#14949d] p-1 rounded-r-md text-white relative left-0 z-10 top-0'>{j.discount} OFF</span>
@@ -106,8 +106,8 @@ export default function Home() {
                       </svg>
                     </span>
                   </div>
-                  <div className='flex-col  justify text-lg font-normal items-center bg-white hover:bottom-11 relative z-10 w-full  bottom-10'>
-                    <p className='hover:text-[#14949d] text-2xl'>{j.name}</p>
+                  <div className='flex-col  justify text-lg font-normal items-center bg-white group-hover:bottom-12 transition-transform duration-300 ease-in-out relative z-10 w-full  bottom-10'>
+                    <p className='group-hover:text-[#14949d] text-2xl'>{j.name}</p>
                     <p className='p-3'>{j.price}</p>
                     <button className='bg-[#14949d] text-white p-2 rounded-md text-xs  items-center '>
                       <svg className=" inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -123,7 +123,7 @@ export default function Home() {
         {/* 2nd row */}
         <div className=' flex justify-center py-8 border-b border-gray-300 mb-12 shadow-md flex-wrap lg:flex-nowrap text-nowrap'>
           {productImg1.map((j) => (
-            <div key={j.name} className='flex justify-center items-center' >
+            <div key={j.name} className='flex justify-center items-center group' >
               <div className=' text-center lg:border-[0.5px] border-gray-300 rounded-md '>
                 <div className='flex justify-center items-center h-64'>
                   <span className='text-xs self-start  bg-[#14949d] p-1 rounded-r-md text-white relative left-0 z-10 top-0'>{j.discount}</span>
@@ -137,8 +137,8 @@ export default function Home() {
                     </svg>
                   </span>
                 </div>
-                <div className='flex-col  justify text-lg font-normal items-center bg-white hover:bottom-11 relative z-10 w-full  bottom-10'>
-                  <p className='hover:text-[#14949d] text-2xl'>{j.name}</p>
+                <div className='flex-col  justify text-lg font-normal items-center bg-white group-hover:bottom-12 transition-transform duration-300 ease-in-out relative z-10 w-full  bottom-10'>
+                  <p className='group-hover:text-[#14949d] text-2xl'>{j.name}</p>
                   <p className='p-3'>{j.price}</p>
                   <button className='bg-[#14949d] text-white p-2 rounded-md text-xs  items-center '>
                     <svg className=" inline h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

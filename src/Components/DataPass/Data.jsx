@@ -299,16 +299,19 @@ export const categoryVariety =
   ]
 ]
 
+let slidesToScroll=1;
 
-
-
+setInterval(() => {
+  slidesToScroll=+3;
+  
+}, 5000);
 
 export var settings = {
-  dots: true,
+ dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 7,
-  slidesToScroll: 1,
+  slidesToScroll: slidesToScroll,
   initialSlide: 1,
   arrow: true,
   nextArrow: <SampleNextArrow />,
@@ -345,7 +348,7 @@ export var settings1 = {
   infinite: false,
   speed: 300,
   slidesToShow: 5,
-  slidesToScroll: 1,
+  slidesToScroll: slidesToScroll,
   initialSlide: 0,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
