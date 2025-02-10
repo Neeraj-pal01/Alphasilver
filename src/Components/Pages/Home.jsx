@@ -32,6 +32,7 @@ export default function Home() {
     }
 
   }
+  
   return (
     <>
 
@@ -65,7 +66,7 @@ export default function Home() {
 
               <div key={i.name} className=' '>
                 <div className='flex justify-center items-center'>
-                  <Link to={i.link} >
+                  <Link to={i.link} onClick={() => setSubcategory(i.subcategories? i.subcategories : [])} >
                     <img className='rounded-full object-cover border-2 border-blue-500' src={i.img} alt="" />
                   </Link>
                 </div>

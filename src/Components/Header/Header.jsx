@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar'
 import { CategoryContext } from '../Products/CategoryProvider'
-import { categoryImg } from '../DataPass/Data'
+
 
 
 
