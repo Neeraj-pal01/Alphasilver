@@ -10,8 +10,7 @@ import { CategoryContext } from '../Products/CategoryProvider';
 import { bannerImg, productImg1, settings, settings1 } from '../DataPass/Data'
 
 export default function Home() {
-  const { category } = useContext(CategoryContext);
-  const {  setSubcategory } = useContext(CategoryContext);
+  const { category,setSubcategory  } = useContext(CategoryContext);
   const{  setProducts} = useContext(CategoryContext);
   
 
